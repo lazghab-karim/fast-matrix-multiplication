@@ -11,17 +11,13 @@ The aim is to compare performance across these methods.
 ---
 
 ## 📂 Project Structure
+```bash
 .
-
 ├── naive.c # Baseline sequential matrix multiplication
-
 ├── parallel.c # OpenMP-based parallel matrix multiplication
-
 ├── SIMD.c # SIMD AVX2/FMA matrix multiplication
-
 ├── README.md # Documentation
-
----
+```
 
 ## 🚀 Implementations
 
