@@ -66,6 +66,8 @@ Each executable multiplies two randomly generated N × N matrices.
 ```
 ## 📊 Performance Overview
 
+https://github.com/lazghab-karim/fast-matrix-multiplication/tree/main/KPI
+
 Naive → Slowest, simple reference.
 
 Parallel → Exploits multi-core CPUs; large speedup on systems with many threads.
