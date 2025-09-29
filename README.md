@@ -56,9 +56,20 @@ gcc -mfma -mavx2 SIMD.c -o SIMD
 Each executable multiplies two randomly generated N × N matrices.
 
 ```bash
-./naive
-./parallel
-./SIMD.exe   # Windows (MinGW/MSYS2)
+./naive <rows_A> <cols_A> <cols_B>
+./parallel <rows_A> <cols_A> <cols_B>
+./SIMD <rows_A> <cols_A> <cols_B>   # Windows (MinGW/MSYS2)
+```
+- <rows_A> → number of rows in matrix A
+
+- <cols_A> → number of columns in matrix A (match rows of B)
+
+- <cols_B> → number of columns in matrix B
+
+### exemple
+```bash
+# Multiply a 512x256 matrix A with a 256x128 matrix B
+./parallel 512 256 128
 ```
 ## 📊 Performance Overview
 
